@@ -1,13 +1,5 @@
 Caso 1:
 
-FUNÇÕES:
-
-Classe_RNA.py
-Classe_Filtro.py
-Classe_Equação.py
-Classe_Entropia.py
-Classe_Distancia.py
-
 INFORMAÇÕES:
 
 QUANTIDADE DE MOLÉCULAS INICIAIS [500 moléculas]
@@ -33,6 +25,7 @@ Teste 1.0 - (Alfa: 0% / Beta: 20%)
 
 Teste 1.1 - (Alfa: 5% / Beta: 20%)
 
-Teste 1.1 - (Alfa: 15% / Beta: 20%)
+Teste 1.2 - (Alfa: 15% / Beta: 20%)
 
-Teste 1.1 - (Alfa: 20% / Beta: 20%)
+Teste 1.3 - (Alfa: 20% / Beta: 20%)
+

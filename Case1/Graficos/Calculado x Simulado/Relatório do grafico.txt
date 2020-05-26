@@ -1,0 +1,5 @@
+*O limite do calculado é até 25 alfa Pra ficar estavel com 30 ja fica bagunçado.
+
+*Quanto maior a mutação maior o erro sendo que o simulado fica um por mais baixo.
+para 10% fica só um pouco mais baixo(simulado).
+
