@@ -60,7 +60,7 @@ while( afinidade < 1 and ciclo < limite ):
 
     #Para exibição de cada ciclo
     print( '\nCiclo: %d'%ciclo )
-    print( 'Simulado :     QTD=%d       AFF:%.4f'%( QTD, afinidade ) )
+    print( 'Simulado:     QTD=%d       AFF:%.4f'%( QTD, afinidade ) )
     print( 'Calculado:     QTD=%.1f    AFF:%.4f'%( QTD_C , AFF_C )  )
     print( 'Entropia: %.4f                    TAM: %.1f'%( bits, TAM ) )
 
