@@ -5,67 +5,70 @@ Created on Sun Nov 18 18:56:35 2018
 @author: caiom
 """
 
-from pylab import *   
-from Classe_RNA import RNA
-from Classe_Filtro import Filtro
-from Classe_Equação import Equação
-from Classe_Entropia import Entropia
+from pylab              import *   
+from Classe_RNA         import RNA
+from Classe_Filtro      import Filtro
+from Classe_Equação     import Equação
+from Classe_Entropia    import Entropia
+
 #Entrada de dados...
-mol=500#int(input('Quantidade de molécula:'))
-tam=50#int(input('Tamanho da molécula:'))
+#int(input('Quantidade de molécula:'))
+mol = 500
+#int(input('Tamanho da molécula:'))
+tam = 50
 #Taxa de mutação (%):
-alfa=5
+alfa = 5
 #Eficiência de filtro(%):
-beta=90
+beta = 90
 #Gene Alvo:        (não é necessario ser 5 bases) Escolher entre {A-T-C-G}
-alvo= 'AAAAA'
+alvo = 'AAAAA'
 #Limite de Rounds:
-limite=1000
+limite = 1000
 #Limite de moléculas:
-popMax=500
+popMax = 500
 
 #Aplicando classes e funçoes...
-moleculas=RNA()
-filtro=Filtro()
-calculado=Equação()
-entropia=Entropia()
-ciclo=0
-afinidade=0
+moleculas = RNA()
+filtro = Filtro()
+calculado = Equação()
+entropia = Entropia()
+ciclo = 0
+afinidade = 0
 
-lista_afinidade=[0]
-lista_ciclo=[0]
-lista_tamanho=[50]
-lista_QTD=[0]
-lista_entropia=[2]
+lista_afinidade = [ 0 ]
+lista_ciclo = [ 0 ]
+lista_tamanho = [ 50 ]
+lista_QTD = [ 0 ]
+lista_entropia = [ 2 ]
 
 #Gerando as primeiras moleculas:
-moleculas_1G , afinidade_1G= moleculas.Gerar(mol, tam, alvo)
-m_gerais=moleculas_1G
-NA= afinidade_1G*(len(moleculas_1G))
-NB=(len(moleculas_1G)) - NA
+moleculas_1G , afinidade_1G = moleculas.Gerar(mol, tam, alvo)
+m_gerais = moleculas_1G
+NA = afinidade_1G*(len(moleculas_1G))
+NB =(len(moleculas_1G)) - NA
 
 while(afinidade <1 and ciclo< limite ):
     #Para replicação
-    m_duplicadas=moleculas.PCR(m_gerais ,alfa)
+    m_duplicadas = moleculas.PCR(m_gerais ,alfa)
      
     #Para Constant Population
     m_ordenadas = moleculas.CP(m_duplicadas,popMax,alvo)
 
     #Para Filtragem das moleculas (FILTRO 1)
-    m_filtrada, afinidade, TAM=filtro.seleção(m_ordenadas, alvo, beta)
+    m_filtrada, afinidade, TAM = filtro.seleção(m_ordenadas, alvo, beta)
     
     #Para Filtragem das moleculas (FILTRO 2)
-    m_filtrada, afinidade, TAM=filtro.seleção(m_filtrada, alvo, beta)
+    m_filtrada, afinidade, TAM = filtro.seleção(m_filtrada, alvo, beta)
 
     #Para Entropia de Shannon
-    bits=entropia.Shannon(m_filtrada)
+    bits = entropia.Shannon(m_filtrada)
 
     #Para Equação de Crescimento
-    QTD_C , AFF_C, NA, NB=calculado.Crescimento( NA, NB, alfa, beta, popMax)
+    QTD_C , AFF_C, NA, NB = calculado.Crescimento( NA, NB, alfa, beta, popMax)
 
-    QTD=len(m_filtrada)
+    QTD = len(m_filtrada)
     m_gerais = m_filtrada
-    ciclo+=1
+    ciclo+= 1
 
     #Para exibição de cada ciclo
     print('\nCiclo: %d'%ciclo)
@@ -82,11 +85,11 @@ while(afinidade <1 and ciclo< limite ):
  
 
 #dados
-soma1=0
-d=0
+soma1 = 0
+d = 0
 for i in range(99,999):
-    soma1+=lista_afinidade[i]
-    d+=1
+    soma1+= lista_afinidade[i]
+    d+= 1
 print('Afinidade média: %.2f'%(soma1/d))   
 # Gerando 4 graficos 
     
