@@ -1,98 +1,100 @@
-from pylab import *   
-from Classe_RNA import RNA
-from Classe_Filtro import Filtro
-from Classe_Entropia import Entropia
+from pylab              import *   
+from Classe_RNA         import RNA
+from Classe_Filtro      import Filtro
+from Classe_Entropia    import Entropia
 #Entrada de dados...
-mol=500#int(input('Quantidade de molécula:'))
-tam=50#int(input('Tamanho da molécula:'))
+#int(input('Quantidade de molécula:'))
+mol = 500
+#int(input('Tamanho da molécula:'))
+tam = 50
 #Taxa de mutação (%):
-alfa=10
+alfa = 10
 #Eficiência de filtro(%):
-beta=85
+beta = 85
 #Gene Alvo:        (não é necessario ser 5 bases) Escolher entre {A-T-C-G}
-alvo= 'AAAAA'
+alvo = 'AAAAA'
 #Limite de Rounds:
-limite=1000
+limite = 1000
 #Limite de moléculas:
-popMax=500
+popMax = 500
 
 #Aplicando classes e funçoes...
-moleculas=RNA()
-filtro=Filtro()
-entropia=Entropia()
-ciclo=0
-afinidade=0
+moleculas   = RNA()
+filtro      = Filtro()
+entropia    = Entropia()
+ciclo       = 0
+afinidade   = 0
 
-lista_afinidade=[0]
-lista_afinidade2=[0]
-lista_afinidade3=[0]
-lista_afinidade1=[0]
+lista_afinidade  = [ 0 ]
+lista_afinidade2 = [ 0 ]
+lista_afinidade3 = [ 0 ]
+lista_afinidade1 = [ 0 ]
 
-lista_ciclo=[0]
-lista_tamanho=[50]
+lista_ciclo     =[ 0 ]
+lista_tamanho   =[ 50 ]
 
-lista_QTD=[0]
-lista_QTD2=[0]
-lista_QTD3=[0]
-lista_QTD1=[0]
+lista_QTD  = [ 0 ]
+lista_QTD2 = [ 0 ]
+lista_QTD3 = [ 0 ]
+lista_QTD1 = [ 0 ]
 
 
-lista_entropia=[2]
-lista_entropia2=[2]
-lista_entropia3=[2]
-lista_entropia1=[2]
+lista_entropia  = [ 2 ]
+lista_entropia2 = [ 2 ]
+lista_entropia3 = [ 2 ]
+lista_entropia1 = [ 2 ]
 
 for i in range(1,5):
-    ciclo=0
-    afinidade=0
+    ciclo = 0
+    afinidade = 0
     
     #Gerando as primeiras moleculas:
-    moleculas_1G , afinidade_1G= moleculas.Gerar(mol, tam, alvo)
-    m_gerais=moleculas_1G
-    NA= afinidade_1G*(len(moleculas_1G))
-    NB=(len(moleculas_1G)) - NA
+    moleculas_1G , afinidade_1G = moleculas.Gerar(mol, tam, alvo)
+    m_gerais = moleculas_1G
+    NA = afinidade_1G*(len(moleculas_1G))
+    NB =(len(moleculas_1G)) - NA
 
-    while(afinidade <1 and ciclo< limite ):
+    while(afinidade < 1 and ciclo < limite ):
         #Para replicação
-        m_duplicadas=moleculas.PCR(m_gerais ,alfa)
+        m_duplicadas = moleculas.PCR(m_gerais ,alfa)
          
         #Para Constant Population
         m_ordenadas = moleculas.CP(m_duplicadas,popMax,alvo)
-        m_filtrada=m_ordenadas
+        m_filtrada = m_ordenadas
         #Para Filtragem das moleculas
         for xz in range(i): 
-            m_filtrada, afinidade, TAM=filtro.seleção(m_filtrada, alvo, beta)
+            m_filtrada, afinidade, TAM = filtro.seleção(m_filtrada, alvo, beta)
     
         #Para Entropia de Shannon
-        bits=entropia.Shannon(m_filtrada)
+        bits = entropia.Shannon(m_filtrada)
 
     
-        QTD=len(m_filtrada)
+        QTD = len(m_filtrada)
         m_gerais = m_filtrada
-        ciclo+=1
+        ciclo+= 1
     
         #Para exibição de cada ciclo
         print('\nCiclo: %d'%ciclo)
-        print('Simulado :     QTD=%d       AFF:%.4f'%(QTD, afinidade))
+        print('Simulado:     QTD=%d       AFF:%.4f'%(QTD, afinidade))
         print('Entropia: %f'%bits)
 
 
         #Para construção de graficos                                                       <-- Lista de dados
-        if (i==1):
+        if (i == 1):
             lista_ciclo.append(ciclo)
             lista_afinidade.append(afinidade*100)
             lista_entropia.append(bits)
             lista_tamanho.append(TAM)                                                                                                                     
             lista_QTD.append(QTD)
-        if (i==2):
+        if (i == 2):
             lista_afinidade1.append(afinidade*100)
             lista_entropia1.append(bits)                                                                                                                   
             lista_QTD1.append(QTD)
-        if (i==3):
+        if (i == 3):
             lista_afinidade2.append(afinidade*100)
             lista_entropia2.append(bits)                                                                                                    
             lista_QTD2.append(QTD)
-        if (i==4):
+        if (i == 4):
             lista_afinidade3.append(afinidade*100)
             lista_entropia3.append(bits)
             lista_QTD3.append(QTD)
@@ -178,6 +180,5 @@ plt.plot( grafico4_x , grafico4_3_y, c='y',lw=3 )
 plt.xlabel('Ciclo/Round')
 plt.ylabel('Tamanho Médio')
 plt.grid(True)
-
 
 plt.show()
