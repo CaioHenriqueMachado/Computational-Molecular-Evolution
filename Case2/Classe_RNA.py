@@ -248,9 +248,7 @@ class RNA:
                 del(moleculas[i])
                 QTD_NB -= 1
             qtd_mol=len(moleculas)
-                                
-            
-                
+
         return moleculas
 
 
