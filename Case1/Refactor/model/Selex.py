@@ -73,7 +73,7 @@ class Base:
         return self.sequence
 
 '''
-NOTAS:
+NOTAS DO DIA 09/06/2020
 
 MUTAÇÃO:
 Três opções a serem seguidas:
