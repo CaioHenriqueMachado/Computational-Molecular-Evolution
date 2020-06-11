@@ -1,6 +1,6 @@
-from SelexClass         import Selex 
-from CalculationClass   import Calculation
-from EntropyClass       import ShannonEntropy
+from ClassSelex         import Selex 
+from ClassCalculation   import Calculation
+from ClassEntropy       import ShannonEntropy
 
 # QUANTITY OF MOLECULES
 mols = 500

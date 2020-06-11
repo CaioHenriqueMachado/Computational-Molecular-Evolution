@@ -1,8 +1,7 @@
 from pylab              import *   
-from Classe_RNA         import RNA
-from Classe_Filtro      import Filtro
-from Classe_Equação     import Equação
-from Classe_Entropia    import Entropia
+from ClassSelex         import Selex 
+from ClassCalculation   import Calculation
+from ClassEntropy       import ShannonEntropy
 #Entrada de dados...
 #int(input('Quantidade de molécula:'))
 mol = 500

@@ -1,7 +1,7 @@
 from pylab              import *   
-from Classe_RNA         import RNA
-from Classe_Filtro      import Filtro
-from Classe_Entropia    import Entropia
+from ClassSelex         import Selex 
+from ClassCalculation   import Calculation
+from ClassEntropy       import ShannonEntropy
 
 
 # NESSE CÓDIGO A INTENÇÃO FOI GERAR 4 VEZES PARA VER AS 4 LINHAS EM CADA GRAFICOS

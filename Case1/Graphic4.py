@@ -1,7 +1,7 @@
 from pylab              import *   
-from SelexClass         import Selex 
-from CalculationClass   import Calculation
-from EntropyClass       import ShannonEntropy
+from ClassSelex         import Selex 
+from ClassCalculation   import Calculation
+from ClassEntropy       import ShannonEntropy
 
 #Neste código a intenção é comparar 1 filtro de 20% com 2 filtros de 10%. mostrando o mesmo resultado
 

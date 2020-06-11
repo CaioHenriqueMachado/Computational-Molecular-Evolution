@@ -1,7 +1,7 @@
 from pylab              import *   
-from SelexClass         import Selex 
-from CalculationClass   import Calculation
-from EntropyClass       import ShannonEntropy
+from ClassSelex         import Selex 
+from ClassCalculation   import Calculation
+from ClassEntropy       import ShannonEntropy
 
 # ESTE CÓDIGO É PARA GERAR GRÁFICOS VARIANDO TAXA DE MUTAÇÃO OU EFICIÊNCIA DE FILTRO
 
