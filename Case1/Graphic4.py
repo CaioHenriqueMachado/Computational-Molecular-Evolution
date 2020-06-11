@@ -1,15 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Nov 18 18:56:35 2018
-
-@author: caiom
-"""
-
 from pylab              import *   
-from Classe_RNA         import RNA
-from Classe_Filtro      import Filtro
-from Classe_Equação     import Equação
-from Classe_Entropia    import Entropia
+from SelexClass         import Selex 
+from CalculationClass   import Calculation
+from EntropyClass       import ShannonEntropy
+
+#Neste código a intenção é comparar 1 filtro de 20% com 2 filtros de 10%. mostrando o mesmo resultado
 
 #Entrada de dados...
 #int(input('Quantidade de molécula:'))

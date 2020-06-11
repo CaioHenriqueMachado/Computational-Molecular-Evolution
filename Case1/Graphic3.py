@@ -2,7 +2,9 @@ from pylab              import *
 from Classe_RNA         import RNA
 from Classe_Filtro      import Filtro
 from Classe_Entropia    import Entropia
-#Entrada de dados...
+
+
+# NESSE CÓDIGO A INTENÇÃO FOI GERAR 4 VEZES PARA VER AS 4 LINHAS EM CADA GRAFICOS
 #int(input('Quantidade de molécula:'))
 mol = 500
 #int(input('Tamanho da molécula:'))
