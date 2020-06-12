@@ -1,4 +1,4 @@
-from pylab              import *   
+from pylab              import *  
 from ClassSelex         import Selex 
 from ClassCalculation   import Calculation
 from ClassEntropy       import ShannonEntropy
@@ -9,10 +9,10 @@ from ClassEntropy       import ShannonEntropy
 mols = 500
 
 # MOLECULES SIZE
-tam = 50
+tam = 100
 
 # MUTATION RATE(%):
-alpha = 10
+alpha = 0
 
 # FILTER EFFICIENCY(%):
 beta = 20
@@ -30,7 +30,7 @@ molecules_limit = 500
 list_cycle     = [0]
 list_size      = []
 list_amount    = []
-lista_entropy  = []
+list_entropy  = []
 
 
 project = Selex( mols, tam, target)
@@ -77,64 +77,61 @@ while( cycle <= cycles_limit ):
     
 
 
-
-
  #Para construção de graficos                                                       <-- Lista de dados
-lista_afinidade = project.all_affinity
-lista_entropy  = entropy.result_entropy
+list_affinity = project.all_affinity
+list_entropy  = entropy.result_entropy
 list_size   = project.all_averageSize                                                                                                                
 list_amount       = project.all_amount
  
   
 
-# Gerando 4 graficos 
+# GENERATING GRAPHICS
 
-#Primeiro (Afinidade X Ciclo) 
-    
-grafico1_x = list_cycle
-grafico1_y = lista_afinidade 
+# 1° - AFINITY X CYCLE
+
+axis_x = list_cycle
+axis1_y = list_affinity 
 
 plt.rcParams['figure.figsize'] = (12,8)
 
 plt.subplot(2,2,1)
-plt.title('AFINIDADE (mol. afins)')
-plt.plot( grafico1_x , grafico1_y, c ='#0000ff',lw = 3)
-plt.xlabel('Ciclo/Round')
-plt.ylabel('Afinidade(%)')
-
+plt.title('AFFINITY')
+plt.plot( axis_x , axis1_y, c ='#0000ff',lw = 3)
+plt.xlabel('cycle')
+plt.ylabel('affinity(%)')
 plt.grid(True)
 
-#Segundo (QTD_moleculas X Ciclo)   
-grafico2_x = list_cycle
-grafico2_y = list_amount
+
+# 2° - QUANTITY OF MOLECULES X CYCLE 
+
+axis2_y = list_amount
 
 plt.subplot(2,2,2)
-plt.title('QUANTIDADE DE MOLÉCULAS')
-plt.plot( grafico2_x , grafico2_y, c ='#0000ff',lw = 3)
-plt.xlabel('Ciclo/Round')
-plt.ylabel('QTD_moléculas')
+plt.title('QUANTITY OF MOLECULES')
+plt.plot( axis_x , axis2_y, c ='#0000ff',lw = 3)
+plt.xlabel('cycle')
+plt.ylabel('quantity of molecules')
 plt.grid(True)
 
-#Terceiro (Entropia X Ciclo)   
-grafico3_x = list_cycle
-grafico3_y = lista_entropy 
+# 3° - AVERAGE ENTROPY X CYCLE
+  
+axis3_y = list_entropy 
 
 plt.subplot(2,2,3)
-plt.title('ENTROPIA MÉDIA DAS MOLÉCULAS (Bits)')
-plt.plot( grafico3_x , grafico3_y, c ='#0000ff',lw = 3 )
-plt.xlabel('Ciclo/Round')
-plt.ylabel('Entropia')
+plt.title('AVERAGE ENTROPY')
+plt.plot( axis_x , axis3_y, c ='#0000ff',lw = 3 )
+plt.xlabel('cycle')
+plt.ylabel('entropy(Bits)')
 plt.grid(True)
 
-#Quarto (Tamanho medio X Ciclo)   
-grafico4_x = list_cycle
-grafico4_y = list_size
+# 4° - AVERAGE SIZE X CYCLE 
+axis4_y = list_size
 
 plt.subplot(2,2,4)
-plt.title('TAMANHO MÉDIO DAS MOLÉCULAS (Base)')
-plt.plot( grafico4_x , grafico4_y, c ='#0000ff',lw = 3 )
-plt.xlabel('Ciclo/Round')
-plt.ylabel('Tamanho Médio')
+plt.title('AVERAGE SIZE')
+plt.plot( axis_x , axis4_y, c ='#0000ff',lw = 3 )
+plt.xlabel('cycle')
+plt.ylabel('average size(Base)')
 plt.grid(True)
 
 plt.show()

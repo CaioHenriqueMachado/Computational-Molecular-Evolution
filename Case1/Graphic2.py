@@ -1,118 +1,131 @@
-from pylab              import *   
+from pylab              import *  
 from ClassSelex         import Selex 
 from ClassCalculation   import Calculation
 from ClassEntropy       import ShannonEntropy
-#Entrada de dados...
-#int(input('Quantidade de molécula:'))
-mol = 500
-#int(input('Tamanho da molécula:'))
-tam = 50
-#Taxa de mutação (%):
-alfa = 20
-#Eficiência de filtro(%):
-beta = 60
-#Gene Alvo:        (não é necessario ser 5 bases) Escolher entre {A-T-C-G}
-alvo = 'AAAAA'
-#Limite de Rounds:
-limite = 1000
-#Limite de moléculas:
-popMax = 500
 
-#Aplicando classes e funçoes...
-moleculas   = RNA()
-filtro      = Filtro()
-calculado   = Equação()
-entropia    = Entropia()
-ciclo       = 0
-afinidade   = 0
+# ESTE CÓDIGO É PARA GERAR GRÁFICOS VARIANDO TAXA DE MUTAÇÃO OU EFICIÊNCIA DE FILTRO
 
-lista_afinidade = [ 0 ]
-lista_ciclo     = [ 0 ]
-lista_QTD       = [ 0 ]
-lista_QTD_C     = [ 0 ]
-lista_AFF_C     = [ 0 ]
+# QUANTITY OF MOLECULES
+mols = 500
 
-#Gerando as primeiras moleculas:
-moleculas_1G , afinidade_1G = moleculas.Gerar(mol, tam, alvo)
-m_gerais = moleculas_1G
-NA = afinidade_1G*(len(moleculas_1G))
-NB = (len(moleculas_1G)) - NA
+# MOLECULES SIZE
+tam = 100
+
+# MUTATION RATE(%):
+alpha = 0
+
+# FILTER EFFICIENCY(%):
+beta = 20
+
+# TARGET
+target = 5
+
+# CYCLES LIMIT
+cycles_limit = 500
+
+# MOLECULES LIMIT
+molecules_limit = 500
+
+# GRAFICS
+list_cycle     = [0]
+list_size      = []
+list_amount    = []
+list_entropy  = []
 
 
-while(afinidade < 1 and ciclo < limite ):
-    #Para replicação
-    m_duplicadas = moleculas.PCR(m_gerais ,alfa)
-     
-    #Para Constant Population
-    m_ordenadas = moleculas.CP(m_duplicadas,popMax,alvo)
+project = Selex( mols, tam, target)
 
-    #Para Filtragem das moleculas
-    m_filtrada, afinidade, TAM=filtro.seleção(m_ordenadas, alvo, beta)
+entropy = ShannonEntropy()
 
-    #Para Entropia de Shannon
-    bits = entropia.Shannon(m_filtrada)
+calculation = Calculation(alpha, beta, molecules_limit)
 
-    #Para Equação de Crescimento
-    QTD_C , AFF_C, NA, NB = calculado.Crescimento( NA, NB, alfa, beta, popMax)
-
-    QTD = len(m_filtrada)
-    m_gerais = m_filtrada
-    ciclo+= 1
-
-    #Para exibição de cada ciclo
-    print('\nCiclo: %d'%ciclo)
-    print('Simulado :     QTD=%d       AFF:%.4f'%(QTD, afinidade))
-    print('Calculado:     QTD=%d       AFF:%.4f'%(QTD_C, AFF_C))
-    print('Entropia: %f'%bits)
+# GENERATION OF INITIAL MOLECULES
+project.Generator()
 
 
- #Para construção de graficos                                                       <-- Lista de dados
-    lista_ciclo.append(ciclo)
-    lista_afinidade.append(afinidade)
-    lista_QTD.append(QTD)
-    lista_QTD_C.append(QTD_C)
-    lista_AFF_C.append(AFF_C)
 
-#1--------------------
 
-# Gerando grafico
-#Primeiro (Afinidade X Round) 
-#Simulado
-grafico1_x = lista_ciclo
-grafico1_y = lista_afinidade
-#Calculado
-grafico2_x = lista_ciclo
-grafico2_y = lista_AFF_C
+cycle = 1
+while( cycle <= cycles_limit ):
+    list_cycle.append(cycle)
+
+    # REPLICATION WITH MUTATION RATE(%)
+    project.PolymeraseChainReaction(alpha)
+
+    # LIMITATION OF MOLECULES(%)
+    project.ConstantPopulation(molecules_limit)
+
+    # MOLECULES SELECTION
+    project.Filter(beta)
+
+    # SHANNON ENTROPY
+    bits = entropy.Result(project.molecules)
+
+    # CALCULATE
+    result = calculation.GrowthEquation(project.all_affinity[cycle], project.molecules)
+    
+    # Para exibição de cada ciclo
+    print( '\nCYCLE: ',cycle )
+    print('AFF: %.4f        AMOUNT: %i' %(project.all_affinity[cycle], project.all_amount[cycle]))
+    print('BITS: %.4f       SIZE: %.2f' %(bits, project.all_averageSize[cycle]))
+    print('CALCULADO: %.4f'%(result))
+
+    if ( project.all_affinity[cycle] >= 1 ):
+        break
+
+    cycle += 1
+    
+
+
+
+
+
+
+#Para construção de graficos                                                       <-- Lista de dados
+list_affinity = project.all_affinity
+list_entropy  = entropy.result_entropy
+list_size   = project.all_averageSize                                                                                                                
+list_amount       = project.all_amount
+list_affinity_calculate = calculation.all_results
+  
+
+
+# GENERATING GRAPHICS
+
+
+
+# 1° - AFINITY X CYCLE (CALCULATED X SIMULATED)
+
+axis_x = list_cycle
+axis1_y = list_affinity
+# CALCULATED
+axis2_y = list_affinity_calculate
 
 plt.rcParams['figure.figsize'] = (8,12)
-plt.title('TAXA DE MUTAÇÃO %d --> CALCULADO X SIMULADO'%alfa)
+plt.title('MUTATION RATE %d (CALCULATED X SIMULATED)'%alpha)
 plt.subplot(1,2,1)
-plt.plot( grafico1_x , grafico1_y )
-plt.plot( grafico2_x , grafico2_y )
-plt.xlabel('ROUND')
-plt.ylabel('AFINIDADE')
+plt.plot( axis_x , axis1_y )
+plt.plot( axis_x , axis2_y )
+plt.xlabel('CYCLE')
+plt.ylabel('AFFINITY')
 plt.grid(True)
 
 plt.show()
 
-#2--------------------
+#2° - QUANTITY OF MOLECULES X CYCLE 
 
-#Segundo (Qtd_mol X Round) 
-#Simulado
-grafico3_x = lista_ciclo
-grafico3_y = lista_QTD
-#Calculado  
-grafico4_x = lista_ciclo
-grafico4_y = lista_QTD_C
+# SIMULATED
+axis3_y = list_amount
+# CALCULATED  
+axis4_y = list_amount
 
-plt.title('TAXA DE MUTAÇÃO %d --> CALCULADO X SIMULADO'%alfa)
+plt.title('MUTATION RATE %d (CALCULATED X SIMULATED)'%alpha)
 plt.subplot(1,2,2)
-plt.plot( grafico3_x , grafico3_y )
-plt.plot( grafico4_x , grafico4_y )
-plt.xlabel('ROUND')
-plt.ylabel('QUANTIDADE DE MOLECULAS')
+plt.plot( axis_x , axis3_y )
+plt.plot( axis_x , axis4_y )
+plt.xlabel('CYCLE')
+plt.ylabel('QUANTITY OF MOLECULES')
 plt.grid(True)
-
 plt.show()
 
 
