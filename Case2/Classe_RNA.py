@@ -9,8 +9,8 @@ class Selex:
         self.all_averageSize = [size]
         self.size = size
         self.size_target = size_target
-        self.target = ''
         self.target = Tools().RandomBase(self.size_target)
+        self.ant_target = Tools().RandomBase(self.size_target)
 
     def Generator(self):
         self.molecules = []
@@ -60,7 +60,6 @@ class Selex:
 
     # JOINING MOLECUES
     def Join(self):
-        self.ant_target = Tools().RandomBase(self.size_target)
         NA = []
         NI = []
         for molecule in self.molecules:
