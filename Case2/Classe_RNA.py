@@ -60,7 +60,18 @@ class Selex:
 
     # JOINING MOLECUES
     def Join(self):
-
+        self.ant_target = Tools().RandomBase(self.size_target)
+        NA = []
+        NI = []
+        for molecule in self.molecules:
+            if ( molecule.count(self.target) > 0 ):
+                NA.append(1)
+            else:
+                NA.append(0)
+            if ( molecule.count(self.ant_target) > 0 ):
+                NI.append(1)
+            else:
+                NI.append(0)
 
 
 
@@ -161,7 +172,7 @@ Opções não exploradas:
 
 JOIN:
 Aplicado:
- - Junta uma molecula que tem TARGET e uma ANT-TARGET
+ - Junta uma molecula que tem TARGET e uma ANT-TARGET. sendo ela, gerado aleatoriamente e no mesmo tamanho que a TARGET
 '''
 
 
