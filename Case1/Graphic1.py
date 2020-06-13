@@ -28,9 +28,7 @@ molecules_limit = 500
 
 # GRAFICS
 list_cycle     = [0]
-list_size      = []
-list_amount    = []
-list_entropy  = []
+
 
 
 project = Selex( mols, tam, target)
@@ -80,8 +78,8 @@ while( cycle <= cycles_limit ):
  #Para construção de graficos                                                       <-- Lista de dados
 list_affinity = project.all_affinity
 list_entropy  = entropy.result_entropy
-list_size   = project.all_averageSize                                                                                                                
-list_amount       = project.all_amount
+list_size     = project.all_averageSize                                                                                                                
+list_amount   = project.all_amount
  
   
 

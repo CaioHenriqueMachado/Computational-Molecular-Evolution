@@ -1,3 +1,4 @@
+from pylab              import *
 from ClassSelex         import Selex 
 from ClassEntropy       import ShannonEntropy
 
@@ -8,7 +9,7 @@ mols = 500
 tam = 50
 
 # MUTATION RATE(%):
-alpha = 10
+alpha = 5
 
 # FILTER EFFICIENCY(%):
 beta = 20
@@ -29,6 +30,9 @@ prob_break = 10
 # JOIN
 prob_join = 5
 
+# GRAFICS
+list_cycle     = [0]
+
 # INSTANCE
 project = Selex( mols, tam, target)
 
@@ -40,6 +44,8 @@ project.Generator()
 
 cycle = 1
 while( cycle <= cycles_limit ):
+    list_cycle.append(cycle)
+    
     # REPLICATION WITH MUTATION RATE(%)
     project.PolymeraseChainReaction(alpha)
 
