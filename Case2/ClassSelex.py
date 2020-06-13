@@ -42,7 +42,7 @@ class Selex:
         self.molecules = self.molecules + new_molecules
         
     # BREAKING MOLECULES 
-    def Break(self, codon_break, prob_break): #< --- PASSAR Break('TTT', 10)
+    def Break(self, codon_break, prob_break):
         self.codon_break = codon_break
         self.prob_break = prob_break
         current_molecules = []
@@ -59,10 +59,12 @@ class Selex:
         self.molecules = current_molecules
 
     # JOINING MOLECUES
-    def Join(self):
-        prob_join =5
+    def Join(self, prob_join):
+        self.prob_join = prob_join
         NA = []
         NI = []
+        Q_NA = 0
+        Q_NI = 0
         for molecule in self.molecules:
             if ( molecule.count(self.target) > 0 and molecule.count(self.ant_target) > 0):
                 NA.append(0)
@@ -70,9 +72,11 @@ class Selex:
             elif (molecule.count(self.target) > 0):
                 NA.append(1)
                 NI.append(0)
+                Q_NA += 1
             elif ( molecule.count(self.ant_target) > 0 ):
                 NA.append(0)
                 NI.append(1)
+                Q_NI += 1
             else:
                 NA.append(0)
                 NI.append(0)
@@ -80,8 +84,9 @@ class Selex:
         for i in range(len(self.molecules)):
             if (NA[i] == 1 and prob_join < (random.randint(1,100))):
                 NA[i] = 0
+                Q_NA -= 1
   
-        joins=min( len(NA) , len(NI) )
+        joins=min( Q_NA , Q_NI )
                         
         for _ in range(joins):
             i=0
@@ -212,114 +217,3 @@ Opções não exploradas:
  - Uma molecula com TARGET e ANT-TARGET ter menas chances de sair do que as outras
 
 '''
-
-
-
-#JUNÇÃO DE MOLÉCULAS---------(Usando a junção 2)--------------------------------------------------------------------------------------------------------
-class ewwe():
-    def Junção(self, moleculas, alvo, inverso):
-        if (inverso == ''):
-            for base in alvo:
-                if (base == 'A'):
-                    inverso+='T'
-                if (base == 'T'):
-                    inverso+='A'
-                if (base == 'C'):
-                    inverso+='G'
-                if (base == 'G'):
-                    inverso+='C'
-        # Para Localizar Moléculas com gene Alvo
-        NA=[]
-        QTD_NA=0
-        for gene in moleculas:
-            QTD=len(gene)
-            i=0
-            afins=0  
-            while ((i+len(alvo)-1) < QTD):
-                condição=True
-                j=0
-                while (j < len(alvo)):
-                    condição= gene[i+j] == alvo[j]
-                    j+=1
-                    if (condição == False):
-                        j=0
-                        break
-                if (j == len(alvo)):
-                    afins+=1
-                    break
-                i+=1
-            if (afins > 0):                                          
-                NA.append(1)
-                QTD_NA+=1
-            else:
-                NA.append(0)
-
-        #Para Localizar Moléculas com genes Inverso
-        NI=[]
-        QTD_NI=0
-        for gene in moleculas:
-            QTD=len(gene)
-            i=0
-            afins=0  
-            while ((i+len(inverso)-1) < QTD):
-                condição=True
-                j=0
-                while (j < len(inverso)):
-                    condição= gene[i+j] == inverso[j]
-                    j+=1
-                    if (condição == False):
-                        j=0
-                        break
-                if (j == len(inverso)):
-                    afins+=1
-                    break
-                i+=1
-            if (afins > 0):                                          
-                NI.append(1)
-                QTD_NI+=1
-            else:
-                NI.append(0)
-        
-        for i in range(len(moleculas)):
-            if (NA[i] == 1 and NI[i] == 1):
-                NA[i]=1                             #Se uma molécula tem os 2 genes,se (NA[i]=1  E  NI[i]=0) ela se juntará com uma não afim.
-                NI[i]=0                             #Se uma molécula tem os 2 genes,se (NA[i]=0  E  NI[i]=1) ela se juntará com uma afim.
-                QTD_NA-=0                           #Se (NA[i]=0) colocar   (QTD_NA-= 1)
-                QTD_NI-=1                           #Se (NI[i]=0) colocar   (QTD_NI-= 1)
-
-        x=5                                        #Probabilidade de haver junção.
-        for i in range(len(moleculas)):
-            if (NA[i] == 1 and x < (random.randint(1,100))):
-                NA[i]=0
-                QTD_NA-=1
-                QTD_NI-=1
-                
-
-        junções=min( QTD_NA , QTD_NI )
-                        
-        for z in range(junções):
-            i=0
-            j=0
-            while ( NA[i] != 1 ):
-                i+=1
-            while( NI[j] !=1):
-                j+=1
-
-            aux=moleculas[j]
-            moleculas[i]+=aux
-            moleculas[j]=0
-            NA[i]=0
-            NI[j]=0
-
-        aux=[]
-        for i in range(len(moleculas)):
-            if (moleculas[i] == 0):
-                aux.append(i)
-
-        aux.sort(reverse=True)
-
-        for i in aux:
-            del(moleculas[i])
-                
-
-        return moleculas
