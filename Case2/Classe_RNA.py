@@ -15,7 +15,7 @@ class Selex:
     def Generator(self):
         self.molecules = []
 
-        for i in range( self.amount ) :
+        for _ in range( self.amount ) :
             self.molecules.append(Tools().RandomBase(self.size))
     
  
@@ -60,20 +60,53 @@ class Selex:
 
     # JOINING MOLECUES
     def Join(self):
+        prob_join =5
         NA = []
         NI = []
         for molecule in self.molecules:
-            if ( molecule.count(self.target) > 0 ):
-                NA.append(1)
-            else:
+            if ( molecule.count(self.target) > 0 and molecule.count(self.ant_target) > 0):
                 NA.append(0)
-            if ( molecule.count(self.ant_target) > 0 ):
+                NI.append(0)
+            elif (molecule.count(self.target) > 0):
+                NA.append(1)
+                NI.append(0)
+            elif ( molecule.count(self.ant_target) > 0 ):
+                NA.append(0)
                 NI.append(1)
             else:
+                NA.append(0)
                 NI.append(0)
 
+        for i in range(len(self.molecules)):
+            if (NA[i] == 1 and prob_join < (random.randint(1,100))):
+                NA[i] = 0
+  
+        joins=min( len(NA) , len(NI) )
+                        
+        for _ in range(joins):
+            i=0
+            j=0
+            while ( NA[i] != 1 ):
+                i+=1
+            while( NI[j] != 1):
+                j+=1
 
+            aux = self.molecules[j]
+            self.molecules[i] += aux
+            self.molecules[j] = 0
+            NA[i] = 0
+            NI[j] = 0
 
+        aux=[]
+        for i in range(len(self.molecules)):
+            if (self.molecules[i] == 0):
+                aux.append(i)
+
+        aux.sort(reverse=True)
+
+        for i in aux:
+            del(self.molecules[i])
+        
 
     # LIMITING THE AMOUNT OF MOLECULES
     def ConstantPopulation(self, max_pop):
@@ -105,7 +138,7 @@ class Tools:
         amount = int(amount)
         bases = [ "A", "T", "C", "G" ]
         self.sequence = ''
-        for i in range(amount):
+        for _ in range(amount):
             self.sequence+=  random.choice(bases)
         return self.sequence
 
@@ -172,6 +205,12 @@ Opções não exploradas:
 JOIN:
 Aplicado:
  - Junta uma molecula que tem TARGET e uma ANT-TARGET. sendo ela, gerado aleatoriamente e no mesmo tamanho que a TARGET
+ - Uma molecula com TARGET e ANT-TARGET não tem chance de juntar novamente.
+Opções não exploradas:
+ - Uma molecula com TARGET e ANT-TARGET pode se juntar com uma não afim.
+ - Uma molecula com TARGET e ANT-TARGET pode se juntar com uma afim.
+ - Uma molecula com TARGET e ANT-TARGET ter menas chances de sair do que as outras
+
 '''
 
 
