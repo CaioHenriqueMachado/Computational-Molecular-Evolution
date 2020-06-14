@@ -43,26 +43,26 @@
 
 
 <h2 align="center">PARAMETERS:</h2>
-**QUANTITY OF MOLECULES**<br>
-`quantity_molecules = 500`
+<strong>QUANTITY OF MOLECULES</strong>
+<code>quantity_molecules = 500</code>
 <br>
-**MOLECULES SIZE**<br>
-`size_molecule = 50`
+<strong>MOLECULES SIZE</strong>
+<code>size_molecule = 50</code>
 <br>
-**MUTATION RATE(%)**<br>
-`alpha = 10`
+<strong>MUTATION RATE(%)</strong>
+<code>alpha = 10</code>
 <br>
-**FILTER EFFICIENCY(%)**<br>
-`beta = 20`
+<strong>FILTER EFFICIENCY(%)</strong>
+<code>beta = 20</code>
 <br>
-**TARGET**<br>
-`target = 5`
+<strong>TARGET</strong>
+<code>target = 5</code>
 <br>
-**CYCLES LIMIT**<br>
-`cycles_limit = 3`
+<strong>CYCLES LIMIT</strong>
+<code>cycles_limit = 3</code>
 <br>
-**MOLECULES LIMIT**<br>
-`molecules_limit = 500`
+<strong>MOLECULES LIMIT</strong>
+<code>molecules_limit = 500</code>
 <br>
 
 <br>
@@ -73,42 +73,41 @@
 <br>
 
 
-<h5>Class Selex:</h5>
-Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.<br>
-**Parameters**:<br>
-`Selex(**quantity_molecules**, **size_molecule**, **target**)`
+<h4>Class Selex:</h4>
+Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.
+<h5>Parameters: Selex(quantity_molecules, size_molecule, target)</h5>
 <br>
-<br>
-**Function PolymeraseChainReaction**:<br>
+<h4>Function PolymeraseChainReaction:</h4>
 Onde acontece a replicação das moléculas com probabilidade de mutação.
-**Parameters**: `Selex().PolymeraseChainReaction(**alpha**)`
+<h5>Parameters: Selex().PolymeraseChainReaction(alpha)</h5>
 <br>
-**Function ConstantPopulation**:<br>
+<h4>Function ConstantPopulation:</h4>
 Limita a quantidade de moléculas.
-**Parameters**: `Selex().ConstantPopulation(**molecules_limit**)`
-
-**Function Filter**:<br>
-Elimina moléculas não afim com base na eficiencia do filtro.
-**Parameters**: `Selex().Filter(**beta**)`
+<h5>Parameters: Selex().ConstantPopulation(molecules_limit)</h5>
 <br>
+<h4>Function Filter:</h4>
+Elimina moléculas não afim com base na eficiencia do filtro.
+<h5>Parameters: Selex().Filter(beta)</h5>
+<br>
+
 <br>
   <h3 align="center">SECUNDARY CLASS AND FUNCTIONS:</h3>
 <br>
 
-**Class Tools**:
+<h4>Class Tools:</h4>
 Onde estão armazenadas funções para analise ou métodos abstraidos.
 <br>
-**Function RandomBase:**
+<h4>Function RandomBase:</h4>
 Retorna sequencia de bases aleatórias de acordo com a quantidade pedida.
-**Parameters**: `Tools().RandomBase(**amount**)`
+<h5>Parameters: `Tools().RandomBase(amount)`
 <br> 
-**Function Affinity**:
+<h4>Function Affinity:</h4>
 Retorna o precentual de afinidade do clico com base nas moleculas.
-**Parameters**: `Tools().Affinity(**target**, **molecules**)`
+<h5>Parameters: `Tools().Affinity(target, molecules)`
 <br>
-**Function AverageSize**:
+<h4>Function AverageSize:</h4>
 Retorna o tamanho médio de todas as moléculas.
-**Parameters**: `Tools().AverageSize(**molecules**)`
+<h5>Parameters: `Tools().AverageSize(molecules)`
 <br>
 
 <br>
