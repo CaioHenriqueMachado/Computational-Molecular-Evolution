@@ -1,6 +1,37 @@
-<h1 align="center">Caso 1:</h1>
+<h1 align="center">Evolução molecular computacional</h1>
 <br>
-<h2 align="center">INFORMAÇÕES:</h2>
+<h3 align="center">Evolução molecular por meio de simulações computacionais</h3>
+<br>
+<img src="./Case1/image/assets/biotechnology1.jpg" alt="BioTech" width="120">
+<br>
+
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
+
+
+<h2 align="center">CASE 1:</h2>
+<br>
+<h3 align="center">DIAGRAM:</h3>
+
+<div align="center">
+  <img src="./Case1/image/assets/diagram.png" alt="BioTech" height="425" width="660">
+</div
+
+<hr />
+
+
+<p align="center">Mobile and web application of monetary donation for NGOs, built in one week Omnistack</p>
+<br>
+<h2 align="center">STEPS:</h2>
+
+<br>
+<h2 align="center">FUNCTIONS:</h2>
+
+<br>
+<h2 align="center">PARAMETERS:</h2>
 
  - 500 MOLÉCULAS INICIAS
 
@@ -18,7 +49,7 @@ EFICIÊNCIA DE FILTRO (Beta): 20%
 TAXA DE MUTAÇÃO (Alfa): 0% (Inicialmente)
 (Percentual de erro que cada base pode ter.)
 <br>
-<h1 align="center">ANALISES</h1>
+<h1 align="center">RESULTS</h1>
 
 <h2 align="center">VARIAÇÃO DE MUTAÇÃO:</h2>
 
@@ -50,4 +81,12 @@ Teste 1.10 - (Alfa: 0% a 100% / Beta: 20%)
 <h2 align="center">CALCULO X SIMULAÇÃO</h2>
 
 Teste 1.11 - (Calculado X Simulado[Alfa: 5% / Beta: 60%])
+
+
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
+
 
