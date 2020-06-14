@@ -118,7 +118,7 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 00% | BETA: 20%</strong>
-        <img src="./image/graphic1.0_results/image1_alpha00_beta_20.png" alt="Mutation Rate Alpha 00 Beta 20" height="450" width="700">
+        <img src="./image/graphic1.0_results/image1_alpha00_beta_20.png" alt="Mutation Rate Alpha 00 Beta 20" height="450" width="800">
       </div>
     </td>
   </tr>
@@ -126,7 +126,7 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 05% | BETA: 20%</strong>
-        <img src="./image/graphic1.0_results/image2_alpha05_beta_20.png" alt="Mutation Rate Alpha 05 Beta 20" height="450" width="700">
+        <img src="./image/graphic1.0_results/image2_alpha05_beta_20.png" alt="Mutation Rate Alpha 05 Beta 20" height="450" width="800">
       </div>
     </td>
   </tr>
@@ -134,7 +134,7 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 10% | BETA: 20%</strong>
-        <img src="./image/graphic1.0_results/image3_alpha10_beta_20.png" alt="Mutation Rate Alpha 10 Beta 20" height="450" width="700">
+        <img src="./image/graphic1.0_results/image3_alpha10_beta_20.png" alt="Mutation Rate Alpha 10 Beta 20" height="450" width="800">
       </div>
     </td>
   </tr>
@@ -142,15 +142,15 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 20% | BETA: 20%</strong>
-        <img src="./image/graphic1.0_results/image4_alpha20_beta_20.png" alt="Mutation Rate Alpha 20 Beta 20" height="450" width="700">
+        <img src="./image/graphic1.0_results/image4_alpha20_beta_20.png" alt="Mutation Rate Alpha 20 Beta 20" height="450" width="800">
       </div>
     </td>
   </tr>
-    <tr>
+  <tr>
     <td>
       <div align="center">
         <strong>AFFINITY X MUTATION RATE</strong>
-        <img src="./image/graphic1.1_results/affinity_mutation.png" alt="Mutation Rate X Affinity" height="450" width="700">
+        <img src="./image/graphic1.1_results/affinity_mutation.png" alt="Mutation Rate X Affinity" height="450" width="800">
       </div>
     </td>
   </tr>
@@ -163,7 +163,7 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 00% | BETA: 20%</strong>
-        <img src="./image/graphic1.0_results/image5_alpha05_beta_00.png" alt="Mutation Rate Alpha 05 Beta 00" height="450" width="700">
+        <img src="./image/graphic1.0_results/image5_alpha05_beta_00.png" alt="Mutation Rate Alpha 05 Beta 00" height="450" width="800">
       </div>
     </td>
   </tr>
@@ -171,7 +171,7 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 05% | BETA: 20%</strong>
-        <img src="./image/graphic1.0_results/image6_alpha05_beta_10.png" alt="Mutation Rate Alpha 05 Beta 10" height="450" width="700">
+        <img src="./image/graphic1.0_results/image6_alpha05_beta_10.png" alt="Mutation Rate Alpha 05 Beta 10" height="450" width="800">
       </div>
     </td>
   </tr>
@@ -179,7 +179,7 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 10% | BETA: 20%</strong>
-        <img src="./image/graphic1.0_results/image7_alpha05_beta_50.png" alt="Mutation Rate Alpha 05 Beta 50" height="450" width="700">
+        <img src="./image/graphic1.0_results/image7_alpha05_beta_50.png" alt="Mutation Rate Alpha 05 Beta 50" height="450" width="800">
       </div>
     </td>
   </tr>
@@ -187,7 +187,7 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 20% | BETA: 20%</strong>
-        <img src="./image/graphic1.0_results/image8_alpha05_beta_80.png" alt="Mutation Rate Alpha 05 Beta 80" height="450" width="700">
+        <img src="./image/graphic1.0_results/image8_alpha05_beta_80.png" alt="Mutation Rate Alpha 05 Beta 80" height="450" width="800">
       </div>
     </td>
   </tr>
@@ -195,7 +195,7 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 20% | BETA: 20%</strong>
-        <img src="./image/graphic1.0_results/image9_alpha05_beta_90.png" alt="Mutation Rate Alpha 05 Beta 90" height="450" width="700">
+        <img src="./image/graphic1.0_results/image9_alpha05_beta_90.png" alt="Mutation Rate Alpha 05 Beta 90" height="450" width="800">
       </div>
     </td>
   </tr>
@@ -203,7 +203,7 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>AFFINITY X FILTER RATE</strong>
-        <img src="./image/graphic1.1_results/affinity_filter.png" alt="Filter Rate X Affinity" height="450" width="700">
+        <img src="./image/graphic1.1_results/affinity_filter.png" alt="Filter Rate X Affinity" height="450" width="800">
       </div>
     </td>
   </tr>
