@@ -73,7 +73,7 @@
 <br>
 
 
-<strong>Class Selex:</trong>
+<h5>Class Selex:</h5>
 Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.<br>
 **Parameters**:<br>
 `Selex(**quantity_molecules**, **size_molecule**, **target**)`
