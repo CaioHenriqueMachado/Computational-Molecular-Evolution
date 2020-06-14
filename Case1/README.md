@@ -74,10 +74,10 @@
 
 
 <strong>Class Selex:</trong>
- - Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.
- - **Parameters**:
- - `Selex(**quantity_molecules**, **size_molecule**, **target**)`
-
+Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.<br>
+**Parameters**:<br>
+`Selex(**quantity_molecules**, **size_molecule**, **target**)`
+<br>
 <br>
 **Function PolymeraseChainReaction**:<br>
 Onde acontece a replicação das moléculas com probabilidade de mutação.
