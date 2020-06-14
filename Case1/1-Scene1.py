@@ -3,10 +3,10 @@ from ClassCalculation   import Calculation
 from ClassEntropy       import ShannonEntropy
 
 # QUANTITY OF MOLECULES
-mols = 500
+quantity_molecules = 500
 
 # MOLECULES SIZE
-tam = 50
+size_molecule = 50
 
 # MUTATION RATE(%):
 alpha = 10
@@ -26,7 +26,7 @@ molecules_limit = 500
 
 
 # INSTANCE
-project = Selex( mols, tam, target)
+project = Selex( quantity_molecules, size_molecule, target)
 
 entropy = ShannonEntropy()
 
