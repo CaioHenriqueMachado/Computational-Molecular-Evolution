@@ -42,26 +42,26 @@
 <br>
 
 
-<h2 align="center">PARAMETERS:</h2>
-<strong>QUANTITY OF MOLECULES</strong>
+<h2 align="center">PARAMETERS</h2>
+<strong>QUANTITY OF MOLECULES:</strong><br>
 <code>quantity_molecules = 500</code>
-<br>
-<strong>MOLECULES SIZE</strong>
+<br><br>
+<strong>MOLECULES SIZE:</strong><br>
 <code>size_molecule = 50</code>
-<br>
-<strong>MUTATION RATE(%)</strong>
+<br><br>
+<strong>MUTATION RATE(%):</strong><br>
 <code>alpha = 10</code>
-<br>
-<strong>FILTER EFFICIENCY(%)</strong>
+<br><br>
+<strong>FILTER EFFICIENCY(%):</strong><br>
 <code>beta = 20</code>
-<br>
-<strong>TARGET</strong>
+<br><br>
+<strong>TARGET:</strong><br>
 <code>target = 5</code>
-<br>
-<strong>CYCLES LIMIT</strong>
+<br><br>
+<strong>CYCLES LIMIT:</strong><br>
 <code>cycles_limit = 3</code>
-<br>
-<strong>MOLECULES LIMIT</strong>
+<br><br>
+<strong>MOLECULES LIMIT:</strong><br>
 <code>molecules_limit = 500</code>
 <br>
 
@@ -73,9 +73,9 @@
 <br>
 
 
-<h4>Class Selex:</h4>
+<strong>Class Selex:</strong>
 Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.
-<h5>Parameters: Selex(quantity_molecules, size_molecule, target)</h5>
+<strong>Parameters:</strong> <code>Selex(quantity_molecules, size_molecule, target)</code>
 <br>
 <h4>Function PolymeraseChainReaction:</h4>
 Onde acontece a replicação das moléculas com probabilidade de mutação.
