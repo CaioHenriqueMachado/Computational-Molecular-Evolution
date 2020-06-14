@@ -68,7 +68,6 @@
 <br>
   <h2 align="center">CLASS AND FUNCTIONS:</h2>
 <br>
-<br>
   <h3 align="center">PRIMARY CLASS AND FUNCTIONS:</h3>
 <br>
 
@@ -76,56 +75,76 @@
 <strong>Class Selex:</strong><br>
 Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.<br>
 <strong>Parameters:</strong> <code>Selex(quantity_molecules, size_molecule, target)</code>
-<br>
+<br><br>
 <strong>Function PolymeraseChainReaction:</strong><br>
 Onde acontece a replicação das moléculas com probabilidade de mutação.<br>
-<strong>Parameters</strong> <code>Selex().PolymeraseChainReaction(alpha)</code>
-<br>
+<strong>Parameters:</strong> <code>Selex().PolymeraseChainReaction(alpha)</code>
+<br><br>
 <strong>Function ConstantPopulation:</strong><br>
 Limita a quantidade de moléculas.<br>
-<strong>Parameters</strong> <code>Selex().ConstantPopulation(molecules_limit)</code>
-<br>
+<strong>Parameters:</strong> <code>Selex().ConstantPopulation(molecules_limit)</code>
+<br><br>
 <strong>Function Filter:</strong><br>
 Elimina moléculas não afim com base na eficiencia do filtro.<br>
-<strong>Parameters</strong> <code>Selex().Filter(beta)</code>
-<br>
+<strong>Parameters:</strong> <code>Selex().Filter(beta)</code>
 
 <br>
   <h3 align="center">SECUNDARY CLASS AND FUNCTIONS:</h3>
 <br>
 
 <strong>Class Tools:</strong><br>
-Onde estão armazenadas funções para analise ou métodos abstraidos.<br>
-<br>
+Onde estão armazenadas funções para analise ou métodos abstraidos.
+<br><br>
 <strong>Function RandomBase:</strong><br>
 Retorna sequencia de bases aleatórias de acordo com a quantidade pedida.<br>
-<strong>Parameters</strong> <code>Tools().RandomBase(amount)</code>
-<br> 
+<strong>Parameters:</strong> <code>Tools().RandomBase(amount)</code>
+<br><br>
 <strong>Function Affinity:</strong><br>
 Retorna o precentual de afinidade do clico com base nas moleculas.<br>
-<strong>Parameters</strong> <code>Tools().Affinity(target, molecules)</code>
-<br>
+<strong>Parameters:</strong> <code>Tools().Affinity(target, molecules)</code>
+<br><br>
 <strong>Function AverageSize:</strong><br>
 Retorna o tamanho médio de todas as moléculas.<br>
-<strong>Parameters</strong> <code>Tools().AverageSize(molecules)</code>
+<strong>Parameters:</strong> <code>Tools().AverageSize(molecules)</code>
 <br>
 
 <br>
   <h2 align="center">RESULTS:</h2>
 <br>
 
+<h2 align="center">VARIAÇÃO DE MUTAÇÃO:</h2>
 <table>
   <tr>
-    <td>1</td>
-    <td>2</td>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 0% | BETA: 20%</strong>
+        <img src="./assets/image/diagram.png" alt="BioTech" height="200" width="400">
+      </div>
+    </td>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 0% | BETA: 20%</strong>
+        <img src="./assets/image/diagram.png" alt="BioTech" height="200" width="400">
+      </div>
+    </td>
   </tr>
   <tr>
-    <td>3</td>
-    <td>4</td>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 0% | BETA: 20%</strong>
+        <img src="./assets/image/diagram.png" alt="BioTech" height="200" width="400">
+      </div>
+    </td>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 0% | BETA: 20%</strong>
+        <img src="./assets/image/diagram.png" alt="BioTech" height="200" width="400">
+      </div>
+    </td>
   </tr>
 </table>
 
-<h2 align="center">VARIAÇÃO DE MUTAÇÃO:</h2>
+
 
 Teste 1.0 - (Alfa: 0% / Beta: 20%)
 
