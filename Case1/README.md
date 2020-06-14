@@ -43,25 +43,25 @@
 
 
 <h2 align="center">PARAMETERS:</h2>
-**QUANTITY OF MOLECULES**
+**QUANTITY OF MOLECULES**<br>
 `quantity_molecules = 500`
 <br>
-**MOLECULES SIZE**
+**MOLECULES SIZE**<br>
 `size_molecule = 50`
 <br>
-**MUTATION RATE(%)**
+**MUTATION RATE(%)**<br>
 `alpha = 10`
 <br>
-**FILTER EFFICIENCY(%)**
+**FILTER EFFICIENCY(%)**<br>
 `beta = 20`
 <br>
-**TARGET**
+**TARGET**<br>
 `target = 5`
 <br>
-**CYCLES LIMIT**
+**CYCLES LIMIT**<br>
 `cycles_limit = 3`
 <br>
-**MOLECULES LIMIT**
+**MOLECULES LIMIT**<br>
 `molecules_limit = 500`
 <br>
 
@@ -72,19 +72,21 @@
   <h3 align="center">PRIMARY CLASS AND FUNCTIONS:</h3>
 <br>
 
-**Class Selex**: 
-Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.
-**Parameters**: `Selex(**quantity_molecules**, **size_molecule**, **target**)`
+<p>
+**Class Selex**: <br>
+Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.<br>
+**Parameters**: <code>Selex(**quantity_molecules**, **size_molecule**, **target**)</code>
+</p>
 <br>
-**Function PolymeraseChainReaction**:
+**Function PolymeraseChainReaction**:<br>
 Onde acontece a replicação das moléculas com probabilidade de mutação.
 **Parameters**: `Selex().PolymeraseChainReaction(**alpha**)`
 <br>
-**Function ConstantPopulation**:
+**Function ConstantPopulation**:<br>
 Limita a quantidade de moléculas.
 **Parameters**: `Selex().ConstantPopulation(**molecules_limit**)`
 
-**Function Filter**:
+**Function Filter**:<br>
 Elimina moléculas não afim com base na eficiencia do filtro.
 **Parameters**: `Selex().Filter(**beta**)`
 <br>
