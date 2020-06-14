@@ -216,13 +216,13 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 05% | BETA: 60%</strong>
-        <img src="./image/graphic2_results/image1_alpha05_beta_00.png" alt="Calculate X Simulate Alpha 05 Beta 60" height="200" width="450">
+        <img src="./image/graphic2_results/image10_alpha05_beta_60.png" alt="Calculate X Simulate Alpha 05 Beta 60" height="200" width="450">
       </div>
     </td>
         <td>
       <div align="center">
         <strong>ALPHA: 10% | BETA: 60%</strong>
-        <img src="./image/graphic2_results/image1_alpha05_beta_00.png" alt="Calculate X Simulate Alpha 10 Beta 60" height="200" width="450">
+        <img src="./image/graphic2_results/image11_alpha10_beta_60.png" alt="Calculate X Simulate Alpha 10 Beta 60" height="200" width="450">
       </div>
     </td>
   </tr>
@@ -230,13 +230,13 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 15% | BETA: 60%</strong>
-        <img src="./image/graphic2_results/image1_alpha05_beta_00.png" alt="Calculate X Simulate Alpha 15 Beta 60" height="200" width="450">
+        <img src="./image/graphic2_results/image12_alpha15_beta_60.png" alt="Calculate X Simulate Alpha 15 Beta 60" height="200" width="450">
       </div>
     </td>
         <td>
       <div align="center">
         <strong>ALPHA: 20% | BETA: 60%</strong>
-        <img src="./image/graphic2_results/image1_alpha05_beta_00.png" alt="Calculate X Simulate Alpha 20 Beta 60" height="200" width="450">
+        <img src="./image/graphic2_results/image13_alpha20_beta_60.png" alt="Calculate X Simulate Alpha 20 Beta 60" height="200" width="450">
       </div>
     </td>
   </tr>
