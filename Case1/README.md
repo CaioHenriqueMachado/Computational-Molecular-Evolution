@@ -2,7 +2,7 @@
 <br>
 <p align="center">Evolução molecular por meio de simulações computacionais</p>
 <br>
-<img src="./image/assets/biotechnology1.jpg" alt="BioTech" width="120">
+<img src="./assets/image/biotechnology1.jpg" alt="BioTech" width="120">
 <br>
 
 <p align="center">
@@ -17,7 +17,7 @@
 <h3 align="center">DIAGRAM:</h3>
 
 <div align="center">
-  <img src="./image/assets/diagram.png" alt="BioTech" height="425" width="660">
+  <img src="./assets/image/diagram.png" alt="BioTech" height="425" width="660">
 </div
 
 <hr />
