@@ -2,7 +2,9 @@
 <br>
 <p align="center">Evolução molecular por meio de simulações computacionais</p>
 <br>
-<img src="./assets/image/biotechnology1.jpg" alt="BioTech" width="120">
+<div align="center">
+  <img src="./assets/image/biotechnology1.jpg" alt="BioTech" width="120">
+</div>
 <br>
 
 <p align="center">
@@ -10,17 +12,21 @@
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
   </a>
 </p>
-
-
-<h2 align="center">CASE 1:</h2>
+<hr size="5" color="green"/>
 <br>
-<h3 align="center">DIAGRAM:</h3>
+<br>
+
+<h1 align="center">CASE 1:</h1>
+<br>
+
+<h2 align="center">DIAGRAM</h2>
+<br>
 
 <div align="center">
   <img src="./assets/image/diagram.png" alt="BioTech" height="425" width="660">
-</div
+</div>
 
-<hr />
+<hr size="5" color="black"/>
 
 
 <br>
