@@ -73,8 +73,8 @@
 <br>
 
 
-<strong>Class Selex:</strong>
-Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.
+<strong>Class Selex:</strong><br>
+Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.<br>
 <strong>Parameters:</strong> <code>Selex(quantity_molecules, size_molecule, target)</code>
 <br>
 <h4>Function PolymeraseChainReaction:</h4>
