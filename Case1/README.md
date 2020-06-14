@@ -3,7 +3,7 @@
 <p align="center">Evolução molecular por meio de simulações computacionais</p>
 <br>
 <div align="center">
-  <img src="./assets/image/biotechnology1.jpg" alt="BioTech" width="120">
+  <img src="./image/logo/biotechnology1.jpg" alt="BioTech" width="120">
 </div>
 <br>
 
@@ -23,7 +23,7 @@
 <br>
 
 <div align="center">
-  <img src="./assets/image/diagram.png" alt="BioTech" height="425" width="660">
+  <img src="./image/logo/diagram.png" alt="BioTech" height="425" width="660">
 </div>
 
 <hr size="5"/>
@@ -118,13 +118,13 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 0% | BETA: 20%</strong>
-        <img src="./assets/image/diagram.png" alt="BioTech" height="200" width="400">
+        <img src="./image/graphic1_results/image1_alpha00_beta_20.png" alt="BioTech" height="200" width="400">
       </div>
     </td>
     <td>
       <div align="center">
         <strong>ALPHA: 0% | BETA: 20%</strong>
-        <img src="./assets/image/diagram.png" alt="BioTech" height="200" width="400">
+        <img src="./image/graphic1_results/image1_alpha05_beta_20.png" height="200" width="400">
       </div>
     </td>
   </tr>
@@ -132,13 +132,15 @@ Retorna o tamanho médio de todas as moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 0% | BETA: 20%</strong>
-        <img src="./assets/image/diagram.png" alt="BioTech" height="200" width="400">
+        <img src="./image/graphic1_results/image1_alpha00_beta_20.png" alt="BioTech" height="200" width="400">
       </div>
     </td>
+  </tr>
+  <tr>
     <td>
       <div align="center">
         <strong>ALPHA: 0% | BETA: 20%</strong>
-        <img src="./assets/image/diagram.png" alt="BioTech" height="200" width="400">
+        <img src="./image/graphic1_results/image1_alpha00_beta_20.png" alt="BioTech" height="200" width="400">
       </div>
     </td>
   </tr>
