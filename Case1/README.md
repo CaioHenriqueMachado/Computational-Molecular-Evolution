@@ -72,11 +72,12 @@
   <h3 align="center">PRIMARY CLASS AND FUNCTIONS:</h3>
 <br>
 
-<p>
-**Class Selex**: <br>
-Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.<br>
-**Parameters**: <code>Selex(**quantity_molecules**, **size_molecule**, **target**)</code>
-</p>
+
+<strong>Class Selex:</trong>
+ - Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.
+ - **Parameters**:
+ - `Selex(**quantity_molecules**, **size_molecule**, **target**)`
+
 <br>
 **Function PolymeraseChainReaction**:<br>
 Onde acontece a replicação das moléculas com probabilidade de mutação.
