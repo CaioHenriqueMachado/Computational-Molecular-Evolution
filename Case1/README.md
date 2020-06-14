@@ -77,37 +77,37 @@
 Onde estão as funções referentes a amplificação, mutação e seleção de moléculas.<br>
 <strong>Parameters:</strong> <code>Selex(quantity_molecules, size_molecule, target)</code>
 <br>
-<h4>Function PolymeraseChainReaction:</h4>
-Onde acontece a replicação das moléculas com probabilidade de mutação.
-<h5>Parameters: Selex().PolymeraseChainReaction(alpha)</h5>
+<strong>Function PolymeraseChainReaction:</strong><br>
+Onde acontece a replicação das moléculas com probabilidade de mutação.<br>
+<strong>Parameters</strong> <code>Selex().PolymeraseChainReaction(alpha)</code>
 <br>
-<h4>Function ConstantPopulation:</h4>
-Limita a quantidade de moléculas.
-<h5>Parameters: Selex().ConstantPopulation(molecules_limit)</h5>
+<strong>Function ConstantPopulation:</strong><br>
+Limita a quantidade de moléculas.<br>
+<strong>Parameters</strong> <code>Selex().ConstantPopulation(molecules_limit)</code>
 <br>
-<h4>Function Filter:</h4>
-Elimina moléculas não afim com base na eficiencia do filtro.
-<h5>Parameters: Selex().Filter(beta)</h5>
+<strong>Function Filter:</strong><br>
+Elimina moléculas não afim com base na eficiencia do filtro.<br>
+<strong>Parameters</strong> <code>Selex().Filter(beta)</code>
 <br>
 
 <br>
   <h3 align="center">SECUNDARY CLASS AND FUNCTIONS:</h3>
 <br>
 
-<h4>Class Tools:</h4>
-Onde estão armazenadas funções para analise ou métodos abstraidos.
+<strong>Class Tools:</strong><br>
+Onde estão armazenadas funções para analise ou métodos abstraidos.<br>
 <br>
-<h4>Function RandomBase:</h4>
-Retorna sequencia de bases aleatórias de acordo com a quantidade pedida.
-<h5>Parameters: `Tools().RandomBase(amount)`
+<strong>Function RandomBase:</strong><br>
+Retorna sequencia de bases aleatórias de acordo com a quantidade pedida.<br>
+<strong>Parameters</strong> <code>Tools().RandomBase(amount)</code>
 <br> 
-<h4>Function Affinity:</h4>
-Retorna o precentual de afinidade do clico com base nas moleculas.
-<h5>Parameters: `Tools().Affinity(target, molecules)`
+<strong>Function Affinity:</strong><br>
+Retorna o precentual de afinidade do clico com base nas moleculas.<br>
+<strong>Parameters</strong> <code>Tools().Affinity(target, molecules)</code>
 <br>
-<h4>Function AverageSize:</h4>
-Retorna o tamanho médio de todas as moléculas.
-<h5>Parameters: `Tools().AverageSize(molecules)`
+<strong>Function AverageSize:</strong><br>
+Retorna o tamanho médio de todas as moléculas.<br>
+<strong>Parameters</strong> <code>Tools().AverageSize(molecules)</code>
 <br>
 
 <br>
