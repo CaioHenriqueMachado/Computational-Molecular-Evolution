@@ -1,8 +1,8 @@
 <h1 align="center">Evolução molecular computacional</h1>
 <br>
-<h3 align="center">Evolução molecular por meio de simulações computacionais</h3>
+<p align="center">Evolução molecular por meio de simulações computacionais</p>
 <br>
-<img src="./Case1/image/assets/biotechnology1.jpg" alt="BioTech" width="120">
+<img src="./image/assets/biotechnology1.jpg" alt="BioTech" width="120">
 <br>
 
 <p align="center">
@@ -17,13 +17,12 @@
 <h3 align="center">DIAGRAM:</h3>
 
 <div align="center">
-  <img src="./Case1/image/assets/diagram.png" alt="BioTech" height="425" width="660">
+  <img src="./image/assets/diagram.png" alt="BioTech" height="425" width="660">
 </div
 
 <hr />
 
 
-<p align="center">Mobile and web application of monetary donation for NGOs, built in one week Omnistack</p>
 <br>
 <h2 align="center">STEPS:</h2>
 
