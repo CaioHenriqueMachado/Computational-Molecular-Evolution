@@ -1,11 +1,11 @@
 from ClassSelex         import Selex 
-from ClassEntropy       import ShannonEntropy
+# from ClassEntropy       import ShannonEntropy
 
 # QUANTITY OF MOLECULES
-mols = 500
+mols = 100
 
 # MOLECULES SIZE
-tam = 50
+tam = 10
 
 # MUTATION RATE(%):
 alpha = 10
@@ -32,7 +32,7 @@ prob_join = 5
 # INSTANCE
 project = Selex( mols, tam, target)
 
-entropy = ShannonEntropy()
+# entropy = ShannonEntropy()
 
 # GENERATION OF INITIAL MOLECULES
 project.Generator()
@@ -42,26 +42,24 @@ cycle = 1
 while( cycle <= cycles_limit ):
     # REPLICATION WITH MUTATION RATE(%)
     project.PolymeraseChainReaction(alpha)
-
+    print('1')
     # MOLECULE BREAK
     project.Break( condon_break, prob_break)
-
+    print('2')
     # MOLECULE JOINT
     project.Join(prob_join)
-
-    # LIMITATION OF MOLECULES(%)
-    project.ConstantPopulation(molecules_limit)
-
+    print('3')
     # MOLECULES SELECTION
     project.Filter(beta)
-
+    print('4')
     # SHANNON ENTROPY
-    bits = entropy.Result(project.molecules)
+    # bits = entropy.Result(project.molecules)
     
     # Para exibição de cada ciclo
     print( '\nCYCLE: ',cycle )
     print('AFF: %.4f        AMOUNT: %i' %(project.all_affinity[cycle], project.all_amount[cycle]))
-    print('BITS: %.4f       SIZE: %.2f' %(bits, project.all_averageSize[cycle]))
+    # print('BITS: %.4f       SIZE: %.2f' %(bits, project.all_averageSize[cycle]))
+    print('TANK: %d         BASE: %d' %(project.tank, project.all_base))
 
     if ( project.all_affinity[cycle] >= 1 ):
         break
