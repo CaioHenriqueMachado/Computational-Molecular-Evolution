@@ -117,67 +117,130 @@ Retorna o tamanho médio de todas as moléculas.<br>
   <tr>
     <td>
       <div align="center">
-        <strong>ALPHA: 0% | BETA: 20%</strong>
-        <img src="./image/graphic1_results/image1_alpha00_beta_20.png" alt="BioTech" height="200" width="400">
-      </div>
-    </td>
-    <td>
-      <div align="center">
-        <strong>ALPHA: 0% | BETA: 20%</strong>
-        <img src="./image/graphic1_results/image1_alpha05_beta_20.png" height="200" width="400">
+        <strong>ALPHA: 00% | BETA: 20%</strong>
+        <img src="./image/graphic1.0_results/image1_alpha00_beta_20.png" alt="Mutation Rate Alpha 00 Beta 20" height="450" width="700">
       </div>
     </td>
   </tr>
   <tr>
     <td>
       <div align="center">
-        <strong>ALPHA: 0% | BETA: 20%</strong>
-        <img src="./image/graphic1_results/image1_alpha00_beta_20.png" alt="BioTech" height="200" width="400">
+        <strong>ALPHA: 05% | BETA: 20%</strong>
+        <img src="./image/graphic1.0_results/image2_alpha05_beta_20.png" alt="Mutation Rate Alpha 05 Beta 20" height="450" width="700">
       </div>
     </td>
   </tr>
   <tr>
     <td>
       <div align="center">
-        <strong>ALPHA: 0% | BETA: 20%</strong>
-        <img src="./image/graphic1_results/image1_alpha00_beta_20.png" alt="BioTech" height="200" width="400">
+        <strong>ALPHA: 10% | BETA: 20%</strong>
+        <img src="./image/graphic1.0_results/image3_alpha10_beta_20.png" alt="Mutation Rate Alpha 10 Beta 20" height="450" width="700">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 20% | BETA: 20%</strong>
+        <img src="./image/graphic1.0_results/image4_alpha20_beta_20.png" alt="Mutation Rate Alpha 20 Beta 20" height="450" width="700">
+      </div>
+    </td>
+  </tr>
+    <tr>
+    <td>
+      <div align="center">
+        <strong>AFFINITY X MUTATION RATE</strong>
+        <img src="./image/graphic1.1_results/affinity_mutation.png" alt="Mutation Rate X Affinity" height="450" width="700">
       </div>
     </td>
   </tr>
 </table>
 
-
-
-Teste 1.0 - (Alfa: 0% / Beta: 20%)
-
-Teste 1.1 - (Alfa: 5% / Beta: 20%)
-
-Teste 1.2 - (Alfa: 15% / Beta: 20%)
-
-Teste 1.3 - (Alfa: 20% / Beta: 20%)
-
-Teste 1.4 - (Alfa: 5% / Beta: 0% a 100%)
-
 <h2 align="center">VARIAÇÃO DE EFICIÊNCIA DE FILTRO:</h2>
 
-Teste 1.5 - (Alfa: 5% / Beta: 0%)
+<table>
+  <tr>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 00% | BETA: 20%</strong>
+        <img src="./image/graphic1.0_results/image5_alpha05_beta_00.png" alt="Mutation Rate Alpha 05 Beta 00" height="450" width="700">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 05% | BETA: 20%</strong>
+        <img src="./image/graphic1.0_results/image6_alpha05_beta_10.png" alt="Mutation Rate Alpha 05 Beta 10" height="450" width="700">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 10% | BETA: 20%</strong>
+        <img src="./image/graphic1.0_results/image7_alpha05_beta_50.png" alt="Mutation Rate Alpha 05 Beta 50" height="450" width="700">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 20% | BETA: 20%</strong>
+        <img src="./image/graphic1.0_results/image8_alpha05_beta_80.png" alt="Mutation Rate Alpha 05 Beta 80" height="450" width="700">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 20% | BETA: 20%</strong>
+        <img src="./image/graphic1.0_results/image9_alpha05_beta_90.png" alt="Mutation Rate Alpha 05 Beta 90" height="450" width="700">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">
+        <strong>AFFINITY X FILTER RATE</strong>
+        <img src="./image/graphic1.1_results/affinity_filter.png" alt="Filter Rate X Affinity" height="450" width="700">
+      </div>
+    </td>
+  </tr>
+</table>
 
-Teste 1.6 - (Alfa: 5% / Beta: 10%)
+<h2 align="center">CALCULATE X SIMULATE</h2>
 
-Teste 1.7 - (Alfa: 5% / Beta: 50%)
-
-Teste 1.8 - (Alfa: 5% / Beta: 80%)
-
-Teste 1.9 - (Alfa: 5% / Beta: 90%)
-
-Teste 1.10 - (Alfa: 0% a 100% / Beta: 20%)
-
-
-<h2 align="center">CALCULO X SIMULAÇÃO</h2>
-
-Teste 1.11 - (Calculado X Simulado[Alfa: 5% / Beta: 60%])
-
-
+<table>
+  <tr>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 05% | BETA: 60%</strong>
+        <img src="./image/graphic2_results/image1_alpha05_beta_00.png" alt="Calculate X Simulate Alpha 05 Beta 60" height="200" width="450">
+      </div>
+    </td>
+        <td>
+      <div align="center">
+        <strong>ALPHA: 10% | BETA: 60%</strong>
+        <img src="./image/graphic2_results/image1_alpha05_beta_00.png" alt="Calculate X Simulate Alpha 10 Beta 60" height="200" width="450">
+      </div>
+    </td>
+  </tr>
+    <tr>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 15% | BETA: 60%</strong>
+        <img src="./image/graphic2_results/image1_alpha05_beta_00.png" alt="Calculate X Simulate Alpha 15 Beta 60" height="200" width="450">
+      </div>
+    </td>
+        <td>
+      <div align="center">
+        <strong>ALPHA: 20% | BETA: 60%</strong>
+        <img src="./image/graphic2_results/image1_alpha05_beta_00.png" alt="Calculate X Simulate Alpha 20 Beta 60" height="200" width="450">
+      </div>
+    </td>
+  </tr>
+</table>
 
 
 ## License
