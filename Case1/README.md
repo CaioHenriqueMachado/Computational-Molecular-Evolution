@@ -16,7 +16,7 @@
 <br>
 <br>
 
-<h1 align="center">CASE 1:</h1>
+<h1 align="center">CASE 1</h1>
 <br>
 
 <h2 align="center">DIAGRAM</h2>
@@ -30,7 +30,7 @@
 
 
 <br>
-  <h2 align="center">STEPS:</h2>
+  <h2 align="center">STEPS</h2>
 <br>
 
  1. As moléculas são geradas com base no tamanho e quantidade solicitada.
@@ -68,9 +68,9 @@
 <br>
 
 <br>
-  <h2 align="center">CLASS AND FUNCTIONS:</h2>
+  <h2 align="center">CLASS AND FUNCTIONS</h2>
 <br>
-  <h3 align="center">PRIMARY CLASS AND FUNCTIONS:</h3>
+  <h3 align="center">PRIMARY CLASS AND FUNCTIONS</h3>
 <br>
 
 
@@ -91,7 +91,7 @@ Elimina moléculas não afim com base na eficiencia do filtro.<br>
 <strong>Parameters:</strong> <code>Selex().Filter(beta)</code>
 
 <br>
-  <h3 align="center">SECUNDARY CLASS AND FUNCTIONS:</h3>
+  <h3 align="center">SECUNDARY CLASS AND FUNCTIONS</h3>
 <br>
 
 <strong>Class Tools:</strong><br>
@@ -110,7 +110,7 @@ Retorna o tamanho médio de todas as moléculas.<br>
 <strong>Parameters:</strong> <code>Tools().AverageSize(molecules)</code>
 
 <br>
-  <h3 align="center">CLASS AND FUNCTIONS FOR ANALYSIS:</h3>
+  <h3 align="center">CLASS AND FUNCTIONS FOR ANALYSIS</h3>
 <br>
 
 <strong>Class ShannonEntropy:</strong><br>
@@ -128,10 +128,10 @@ Retorna o nível de afinidade calculado no ciclo.<br>
 
 
 <br>
-  <h2 align="center">RESULTS:</h2>
+  <h2 align="center">RESULTS</h2>
 <br>
 
-<h2 align="center">VARIAÇÃO DE MUTAÇÃO:</h2>
+<h2 align="center">VARIAÇÃO DE MUTAÇÃO</h2>
 <table>
   <tr>
     <td>
