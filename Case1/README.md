@@ -261,6 +261,26 @@ Retorna o nível de afinidade calculado no ciclo.<br>
   </tr>
 </table>
 
+<h2 align="center">OTHER ANALYSIS</h2>
+
+<table>
+  <tr>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 05% 1xFilter(beta20%) | ALPHA: 05% 2xFilter(beta10%) </strong>
+        <img src="./image/graphic3_results/image14_alpha05_beta_1de20_e_2de10.png" alt="Calculate X Simulate Alpha 10 Beta 60" height="200" width="450">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">
+        <strong>ALPHA: 10% | BETA: 15%</strong>
+        <img src="./image/graphic3_results/image15_alpha_10_beta_15.png" alt="Calculate X Simulate Alpha 20 Beta 60" height="200" width="450">
+      </div>
+    </td>
+  </tr>
+</table>
 
 ## License
 
