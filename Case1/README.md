@@ -38,6 +38,8 @@
  3. As moléculas são deletadas aleatóreamente de forma que não prejudique na analise.
  4. As moléculas são filtradas de forma que moléculas não adaptadas tenham uma probabilidade de morrer.
  5. As moléculas voltam para o passo de replicação.
+ 6. As moléculas são analisadas base a base medindo o nível de organização entre elas apartir da entropia.
+ 7. Foi desenvolvido um calculo para a analise do nivel de afinidade.
 <hr size="5"/>
 <br>
 
@@ -106,7 +108,24 @@ Retorna o precentual de afinidade do clico com base nas moleculas.<br>
 <strong>Function AverageSize:</strong><br>
 Retorna o tamanho médio de todas as moléculas.<br>
 <strong>Parameters:</strong> <code>Tools().AverageSize(molecules)</code>
+
 <br>
+  <h3 align="center">CLASS AND FUNCTIONS FOR ANALYSIS:</h3>
+<br>
+
+<strong>Class ShannonEntropy:</strong><br>
+Onde são analisadas as moléculas base á base para medir a entropia.
+<br><br>
+<strong>Function Result:</strong><br>
+Retorna a entropia com base nas moléculas.<br>
+<strong>Parameters:</strong> <code>ShannonEntropy().Result(molecules)</code>
+<br><br><br>
+<strong>Function Calculation:</strong><br>
+Retorna o nível de afinidade calculado no ciclo.<br>
+<strong>Parameters:</strong> <code>Calculation(alpha, beta, pop_max).Result(affinity, molecules)</code>
+
+
+
 
 <br>
   <h2 align="center">RESULTS:</h2>
