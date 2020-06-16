@@ -70,7 +70,7 @@ A intenção é ver como as moléculas irão se comportar a partir desta situaç
 <code>molecules_limit = 500</code>
 <br><br>
 <strong>BREAK:</strong><br>
-<code>condon_break = 'TTT'</code>
+<code>condon_break = 'TTT'</code><br>
 <code>prob_break = 10</code>
 <br><br>
 <strong>JOIN:</strong><br>
@@ -196,7 +196,7 @@ Retorna a entropia com base nas moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 05% | BETA: 90%</strong>
-        <img src="./image/graphic1_results/image6_alpha05_beta_80.png" alt="Mutation Rate Alpha 05 Beta 90" height="450" width="800">
+        <img src="./image/graphic1_results/image6_alpha05_beta_90.png" alt="Mutation Rate Alpha 05 Beta 90" height="450" width="800">
       </div>
     </td>
   </tr>
