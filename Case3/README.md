@@ -16,7 +16,7 @@
 <br>
 <br>
 
-<h1 align="center">CASE 2</h1>
+<h1 align="center">CASE 3</h1>
 <br>
 <p align="center">NEWS: Neste cenário foi desenvolvido um resevatório onde
 as moléculas que morrem nos ciclos vão diretamente para eles.
@@ -172,7 +172,7 @@ Retorna a entropia com base nas moléculas.<br>
     <td>
       <div align="center">
         <strong>ALPHA: 10% | BETA: 10%</strong>
-        <img src="./image/graphic1_results/image3_alpha10_beta_10.png" alt="Mutation Rate Alpha 10 Beta 10" height="450" width="800">
+        <img src="./image/graphic1_results/image4_alpha10_beta_10.png" alt="Mutation Rate Alpha 10 Beta 10" height="450" width="800">
       </div>
     </td>
   </tr>
