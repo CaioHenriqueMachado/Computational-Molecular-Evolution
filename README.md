@@ -17,7 +17,7 @@
 <br>
 
 <br>
-  <h2 align="center">FEATURES : livro :</h2>
+  <h2 align="center">FEATURES :book:</h2>
 <br>
 
  - [x]<strong>ENTROPY</strong>: Measure the level of organization of the molecules.
@@ -30,7 +30,25 @@
 <hr size="5"/>
 <br>
 
-<p><a href="./Case1/#case1">CASE1 </a></p>
+<br>
+  <h2 align="center">READ MORE ABOUT CASES</h2>
+<br>
+
+<table>
+  <tr>
+    <td>
+      <h3><a href="./Case1/#case1">CASE 1</a></h3>
+    </td>
+    <td>
+      <h3><a href="./Case1/#case2">CASE 2</a></h3>
+    </td>
+    <td>
+      <h3><a href="./Case1/#case3">CASE 3</a></h3>
+    </td>
+  </tr>
+</table>
+
+
 <br>
   <h2 align="center">ABSTRACT</h2>
 <br>

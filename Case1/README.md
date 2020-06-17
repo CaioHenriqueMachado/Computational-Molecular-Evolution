@@ -1,4 +1,4 @@
-<h1 align="center">Evolução molecular computacional</h1>
+<h1 align="center" id="case1">Evolução molecular computacional</h1>
 <br>
 <p align="center">Evolução molecular por meio de simulações computacionais</p>
 <br>
@@ -16,7 +16,7 @@
 <br>
 <br>
 
-<h1 align="center" id="case1">CASE 1</h1>
+<h1 align="center">CASE 1</h1>
 <br>
 
 <h2 align="center">DIAGRAM</h2>
