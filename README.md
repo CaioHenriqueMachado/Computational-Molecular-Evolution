@@ -35,19 +35,11 @@
 <br>
 
 
-<table align="center">
-  <tr>
-    <td>
-      <h3><a href="./Case1/#case1">CASE 1</a></h3>
-    </td>
-    <td>
-      <h3><a href="./Case2/#case2">CASE 2</a></h3>
-    </td>
-    <td>
-      <h3><a href="./Case3/#case3">CASE 3</a></h3>
-    </td>
-  </tr>
-</table>
+<div align="center">
+      <h3><a href="./Case1/#case1">:green_book:CASE :one:</a></h3> |
+      <h3><a href="./Case2/#case2">:closed_book:CASE :two:</a></h3> |
+      <h3><a href="./Case3/#case3">:blue_book:CASE :three:</a></h3>
+</div>
 
 
 <br>
