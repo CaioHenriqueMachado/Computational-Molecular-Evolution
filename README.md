@@ -1,6 +1,20 @@
-# Evolução molecular computacional
+<h1 align="center">Evolução molecular computacional</h1>
+<br>
+<p align="center">Evolução molecular por meio de simulações computacionais</p>
+<br>
+<div align="center">
+  <img src=".Case1/image/logo/biotechnology1.jpg" alt="BioTech" width="120">
+</div>
+<br>
 
-Crescimento genômico in silico
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
+<hr size="5"/>
+<br>
+<br>
 
 RESUMO
 
