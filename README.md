@@ -3,7 +3,7 @@
 <p align="center">Evolução molecular por meio de simulações computacionais</p>
 <br>
 <div align="center">
-  <img src=".Case1/image/logo/biotechnology1.jpg" alt="BioTech" width="120">
+  <img src="./Case1/image/logo/biotechnology1.jpg" alt="BioTech" width="120">
 </div>
 <br>
 
