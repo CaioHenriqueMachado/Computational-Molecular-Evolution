@@ -14,17 +14,32 @@
 </p>
 <hr size="5"/>
 <br>
+
+<br>
+  <h2 align="center">FEATURES</h2>
 <br>
 
-RESUMO
+ - <strong>ENTROPY</strong>: Measure the level of organization of the molecules.
+ - <strong>PYPLOT</strong>: Method to generate graphs for analysis of molecules.
+ - <strong>DARWIN'S THEORY OF EVOLUTION</strong>: Concept of natural selection.
+ 
+
+
+<hr size="5"/>
+<br>
+
+<br>
+  <h2 align="center">ABSTRACT</h2>
+<br>
 
 Respositório usado para documentar pesquisa ciêntifica e dar procedimento aos estudos além de também deixar o código aberto para estudantes ou amantes da biotecnologia e evolução molecular. O desenvolvimento é 'in silico' tentando seguir uma simulação de como as moléculas reagem e evoluem de acordo com o ambiente.O repositório foi dividido em cases para mostrar como as moléculas reagiram para cada caso.
 Os três primeiros casos foram publicados no artigo ciêntifico e foram mantidos 
 
 O caso X foram pesquisas feitas no periodo de 1 ano(2018). Mesmo com a mentalidade de hoje, os valores usados nas variáveis foram mantidas para que fosse preservados os resultados obtidos no artigo científico 
 
-
-OBJETIVO
+<br>
+  <h2 align="center">OBJECTIVE</h2>
+<br>
 
 Expor moléculas a ambientes e situações e verificar o ciclo de vida.
 
@@ -42,7 +57,9 @@ As ligações entre as bases são sempre (A-T) (C-G).
 (Se RNA, (A-U) (C-G))
 
 
-METODOLOGIA
+<br>
+  <h2 align="center">METHODOLOGY</h2>
+<br>
 
 Inicialmente foram usados quatro bases principais para desenvolvimento da pesquisa:
 
