@@ -22,8 +22,9 @@
  - <strong>ENTROPY</strong>: Measure the level of organization of the molecules.
  - <strong>PYPLOT</strong>: Method to generate graphs for analysis of molecules.
  - <strong>DARWIN'S THEORY OF EVOLUTION</strong>: Concept of natural selection.
- 
-
+ - <strong>HAMMING DISTANCE</strong>: Measure the level of difference between equal molecules.
+ - <strong>LEVENSHTEIN DISTANCE</strong>: Measure the level of difference between different molecules.
+ - <strong>SELEX</strong>: Amplification concept, change and selection.
 
 <hr size="5"/>
 <br>
