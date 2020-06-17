@@ -34,6 +34,7 @@
   <h2 align="center">READ MORE ABOUT CASES</h2>
 <br>
 
+<div align="center">
 <table>
   <tr>
     <td>
@@ -47,7 +48,7 @@
     </td>
   </tr>
 </table>
-
+</div>
 
 <br>
   <h2 align="center">ABSTRACT</h2>
