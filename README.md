@@ -1,6 +1,7 @@
 <h1 align="center">Evolução molecular computacional</h1>
 <br>
 <p align="center">Evolução molecular por meio de simulações computacionais</p>
+<p align="center"> >Iniciação Ciêntifica (Author: Caio Henrique Machado)</p>
 <br>
 <div align="center">
   <img src="./Case1/image/logo/biotechnology1.jpg" alt="BioTech" width="120">
@@ -16,19 +17,20 @@
 <br>
 
 <br>
-  <h2 align="center">FEATURES</h2>
+  <h2 align="center">FEATURES : livro :</h2>
 <br>
 
- - <strong>ENTROPY</strong>: Measure the level of organization of the molecules.
- - <strong>PYPLOT</strong>: Method to generate graphs for analysis of molecules.
- - <strong>DARWIN'S THEORY OF EVOLUTION</strong>: Concept of natural selection.
- - <strong>HAMMING DISTANCE</strong>: Measure the level of difference between equal molecules.
- - <strong>LEVENSHTEIN DISTANCE</strong>: Measure the level of difference between different molecules.
- - <strong>SELEX</strong>: Amplification concept, change and selection.
+ - [x]<strong>ENTROPY</strong>: Measure the level of organization of the molecules.
+ - [x]<strong>PYPLOT</strong>: Method to generate graphs for analysis of molecules.
+ - [x]<strong>DARWIN'S THEORY OF EVOLUTION</strong>: Concept of natural selection.
+ - [x]<strong>HAMMING DISTANCE</strong>: Measure the level of difference between equal molecules.
+ - [x]<strong>LEVENSHTEIN DISTANCE</strong>: Measure the level of difference between different molecules.
+ - [x]<strong>SELEX</strong>: Amplification concept, change and selection.
 
 <hr size="5"/>
 <br>
 
+<p><a href="./Case1/#case1">CASE1 </a></p>
 <br>
   <h2 align="center">ABSTRACT</h2>
 <br>
