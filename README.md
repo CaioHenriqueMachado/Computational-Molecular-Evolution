@@ -40,10 +40,10 @@
       <h3><a href="./Case1/#case1">CASE 1</a></h3>
     </td>
     <td>
-      <h3><a href="./Case1/#case2">CASE 2</a></h3>
+      <h3><a href="./Case2/#case2">CASE 2</a></h3>
     </td>
     <td>
-      <h3><a href="./Case1/#case3">CASE 3</a></h3>
+      <h3><a href="./Case3/#case3">CASE 3</a></h3>
     </td>
   </tr>
 </table>
